@@ -13,7 +13,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: Test Report
-          path: ExtentReports/*.html
+          path: ./ExtentReports/*.html
           
       - uses: actions/checkout@v2
       - name: Set up JDK 8
