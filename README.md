@@ -18,24 +18,24 @@ $ mvn exec:java -Dexec.mainClass="com.rest.main.utility.XmlGenerator" test
 
 # To write a new test scenario, follow the steps below:
 
-###Navigate to following path API-Automation/ExcelFiles/TestSuite.xlsx and define the TSID, Test Scenario Name, API, Author, Active flag and Test case count.(Note: Test case count will be based on number of rows present in TestData sheet with which the same Scenario will be executed with different input/output parameters) 
+**Navigate to following path API-Automation/ExcelFiles/TestSuite.xlsx and define the TSID, Test Scenario Name, API, Author, Active flag and Test case count.**(Note: Test case count will be based on number of rows present in TestData sheet with which the same Scenario will be executed with different input/output parameters) 
 
-###Navigate to following path API-Automation/ExcelFiles/TestData.xlsx and create a sheet name with the TSID, and define your Test case ID, Test case description, actual input, expected output and comments if any.
+**Navigate to following path API-Automation/ExcelFiles/TestData.xlsx and create a sheet name with the TSID, and define your Test case ID, Test case description, actual input, expected output and comments if any.**
 
-###Navigate to following path API-Automation/src/test/java/{respective API package}
+**Navigate to following path API-Automation/src/test/java/{respective API package}**
 
-###Write the first automation script with testNG annotations which would look like following.
+**Write the first automation script with testNG annotations which would look like following.**
 
-##@Before Class
+#@Before Class
 This is where test name and respective service class object initialization happens.
 
-##@Test
+#@Test
 This is where the actual test script along with the extent report logs and assertion happens.
 
-##@DataProvider
+#@DataProvider
 This is where the data is supplied to the above @Test, based on the number of rows defined in the respective test scenario sheet in TestData.xlsx file.
 
-Note: Every test script java file should extend the properties from BaseTest.java for report initialization.
+**Note: Every test script java file should extend the properties from BaseTest.java for report initialization.**
 
 
 #Base URL: http://httpbin.org
@@ -44,9 +44,9 @@ CRUD METHODS implemented: GET, POST, PUT, DELETE
 
 #GET Retrieves the request header parameters in the response body and verifies the status code and certain attributes in the response payload.
 
-##URL: http://httpbin.org/headers
+**URL: http://httpbin.org/headers**
 
-##Response Body:
+**Response Body:**
 {
     "headers": {
         "Accept": "application/json",
