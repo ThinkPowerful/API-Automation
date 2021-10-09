@@ -38,11 +38,11 @@ This is where the data is supplied to the above @Test, based on the number of ro
 **Note: Every test script java file should extend the properties from BaseTest.java for report initialization.**
 
 
-#Base URL: http://httpbin.org
+# Base URL: http://httpbin.org
 
 CRUD METHODS implemented: GET, POST, PUT, DELETE
 
-#GET Retrieves the request header parameters in the response body and verifies the status code and certain attributes in the response payload.
+# GET Retrieves the request header parameters in the response body and verifies the status code and certain attributes in the response payload.
 
 **URL: http://httpbin.org/headers**
 
@@ -59,7 +59,7 @@ CRUD METHODS implemented: GET, POST, PUT, DELETE
     }
 }
 
-#POST: Posts the request with the below request payload and verifies if the provided request payload is coming in the response payload along with the response status code.
+# POST: Posts the request with the below request payload and verifies if the provided request payload is coming in the response payload along with the response status code.
 
 **URL: http://httpbin.org/anything**
 
@@ -73,7 +73,7 @@ CRUD METHODS implemented: GET, POST, PUT, DELETE
  "data": "{\"firstName\":\"Richard\",\"lastName\":\"Samson\"}",
 
 
-#PUT: A put request is sent as multipart form data and verifies if the provided input is coming up in the response attribute along with response status code.
+# PUT: A put request is sent as multipart form data and verifies if the provided input is coming up in the response attribute along with response status code.
 
 **URL: http://httpbin.org/anything**
 
@@ -89,7 +89,7 @@ City:Amsterdam
     },
 
 
-#DELETE: A delete request is sent as a query parameter and verifies if the provided input is coming up in the response attribute along with response status code.
+# DELETE: A delete request is sent as a query parameter and verifies if the provided input is coming up in the response attribute along with response status code.
 
 **URL: http://httpbin.org/anything**
 
@@ -116,6 +116,6 @@ In the top right corner of the report there will be a indication of  type of tes
 
 **Capabilities** : Categorized/grouped the test results based on Author(Customizable according to project need)
 
-**Dashboard** : Gives an overview of all the tests executed along with the duration and pie chart representation.
+**  Dashboard** : Gives an overview of all the tests executed along with the duration and pie chart representation.
 
 
