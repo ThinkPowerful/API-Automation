@@ -111,7 +111,7 @@ Limit:10
 
 
 # Test Reports Path:
-Test Reports will always be generated in the path API-Automation/ExtentReports in format of {timestamp}.html
+Test Reports will always be generated in the path **API-Automation/ExtentReports** in format of {timestamp}.html
 The report contains 4 Pane ( "Test Results" , "Category", "Author" , "Dashboard")- Refer to the sample test report
 
 In the top right corner of the report there will be a indication of  type of testing(customizable), BaseURI(customizable), date and time of execution.
