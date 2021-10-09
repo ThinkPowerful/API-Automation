@@ -13,7 +13,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: Test Report
-          path: ./ExtentReports/*.html
+          path: /ExtentReports/*.html
           
       - uses: actions/checkout@v2
       - name: Set up JDK 8
@@ -22,4 +22,4 @@ jobs:
           java-version: '8'
           distribution: 'adopt'
       - name: Build with Maven
-        run: mvn -X test
+        run: mvn test
