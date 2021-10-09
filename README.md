@@ -26,13 +26,13 @@ $ mvn exec:java -Dexec.mainClass="com.rest.main.utility.XmlGenerator" test
 
 4.Write the first automation script with testNG annotations which would look like following.
 
-@Before Class
+*@Before Class
 This is where test name and respective service class object initialization happens.
 
-@Test
+*@Test
 This is where the actual test script along with the extent report logs and assertion happens.
 
-@DataProvider
+*@DataProvider
 This is where the data is supplied to the above @Test, based on the number of rows defined in the respective test scenario sheet in TestData.xlsx file.
 
 Note: Every test script java file should extend the properties from BaseTest.java for report initialization.
@@ -70,28 +70,10 @@ Request Body:
 }
 
 Response Body:
-{
-    "args": {
-        
-    },
-    "headers": {
-        "Accept": "*/*",
-        "Z-Forwarded-For": "AAAAAAAAAAAA",
-        "User-Agent": "Apache-HttpClient/4.5.3 (Java/1.8.0_171)",
-        "Host": "httpbin.org",
-        "Xroxy-Connection": "Keep-Alive",
-        "Accept-Encoding": "gzip,deflate",
-        "Content-Length": "43",
-        "X-Amzn-Trace-Id": "Root=1-6161af39-226db84759df780e59cd4d81",
-        "Content-Type": "application/json; charset=UTF-8"
-    },
-    "data": "{\"firstName\":\"Richard\",\"lastName\":\"Samson\"}",
-    "form": {
+ "data": "{\"firstName\":\"Richard\",\"lastName\":\"Samson\"}",
 
-        
-#UPDATE (Changes specific fields in existing entries): Updates the field named forward_url for the existing basket created above by passing the token in request header
 
-PUT: A put request is sent as multipart form data and verifies if the provided input is coming up in the response attribute along with response status code.
+#PUT: A put request is sent as multipart form data and verifies if the provided input is coming up in the response attribute along with response status code.
 
 URL: http://httpbin.org/anything
 
@@ -101,34 +83,10 @@ City:Amsterdam
 
 Response Body:
 
-{
-    "args": {
-        
-    },
-    "headers": {
-        "Accept": "*/*",
-        "Z-Forwarded-For": "AAAAAAAAAAAA",
-        "User-Agent": "Apache-HttpClient/4.5.3 (Java/1.8.0_171)",
-        "Host": "httpbin.org",
-        "Xroxy-Connection": "Keep-Alive",
-        "Accept-Encoding": "gzip,deflate",
-        "Content-Length": "394",
-        "X-Amzn-Trace-Id": "Root=1-6161af39-2fed50751db7281b78b43990",
-        "Content-Type": "multipart/form-data; boundary=yD94a0n8iUusZkErGCJYyKQdAEnK77-dagQ"
-    },
-    "data": "",
-    "form": {
+"form": {
         "country": "Netherlands",
         "city": "Amsterdam"
     },
-    "method": "PUT",
-    "origin": "167.202.201.18",
-    "files": {
-        
-    },
-    "json": null,
-    "url": "http://httpbin.org/anything"
-}
 
 
 #DELETE: A delete request is sent as a query parameter and verifies if the provided input is coming up in the response attribute along with response status code.
@@ -140,34 +98,10 @@ Skip:Anything
 Limit:10
 
 Response Body:
-{
-    "args": {
+ "args": {
         "limit": "10",
         "skip": "Anything"
     },
-    
-    "headers": {
-        "Accept": "*/*",
-        "Z-Forwarded-For": "AAAAAAAAAAAA",
-        "User-Agent": "Apache-HttpClient/4.5.3 (Java/1.8.0_171)",
-        "Host": "httpbin.org",
-        "Xroxy-Connection": "Keep-Alive",
-        "Accept-Encoding": "gzip,deflate",
-        "X-Amzn-Trace-Id": "Root=1-6161af39-0dca46e008844f396a506a02",
-        "Content-Type": "application/json; charset=UTF-8"
-    },
-    "data": "",
-    "form": {
-        
-    },
-    "method": "DELETE",
-    "origin": "167.202.201.18",
-    "files": {
-        
-    },
-    "json": null,
-    "url": "http://httpbin.org/anything?skip=Anything&limit=10"
-}
 
 
 # Test Reports Path:
