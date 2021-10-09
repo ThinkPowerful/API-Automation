@@ -19,6 +19,7 @@ jobs:
       
       - name: Publish Test Results
         uses: actions/upload-artifact@v2
+        if: failure()
         with:
           name: Test Report
           path: ${{ github.workspace }}/ExtentReports/*.html
