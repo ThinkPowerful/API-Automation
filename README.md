@@ -47,6 +47,7 @@ CRUD METHODS implemented: GET, POST, PUT, DELETE
 **URL: http://httpbin.org/headers**
 
 **Response Body:**
+
 {
     "headers": {
         "Accept": "application/json",
@@ -64,12 +65,14 @@ CRUD METHODS implemented: GET, POST, PUT, DELETE
 **URL: http://httpbin.org/anything**
 
 **Request Body:**
+
 {
   "firstName": "Richard",
   "lastName": "Samson"
 }
 
 **Response Body:**
+
  "data": "{\"firstName\":\"Richard\",\"lastName\":\"Samson\"}",
 
 
@@ -78,6 +81,7 @@ CRUD METHODS implemented: GET, POST, PUT, DELETE
 **URL: http://httpbin.org/anything**
 
 **Request form data:**
+
 Country:Netherlands
 City:Amsterdam
 
@@ -94,10 +98,12 @@ City:Amsterdam
 **URL: http://httpbin.org/anything**
 
 **Request Query Param:** 
+
 Skip:Anything
 Limit:10
 
 **Response Body:**
+
  "args": {
         "limit": "10",
         "skip": "Anything"
@@ -116,6 +122,6 @@ In the top right corner of the report there will be a indication of  type of tes
 
 **Capabilities** : Categorized/grouped the test results based on Author(Customizable according to project need)
 
-**  Dashboard** : Gives an overview of all the tests executed along with the duration and pie chart representation.
+**Dashboard** : Gives an overview of all the tests executed along with the duration and pie chart representation.
 
 
