@@ -7,14 +7,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      
-        
-      - name: Publish Test Results
-        uses: actions/upload-artifact@v2
-        with:
-          name: Test Report
-          path: ${{ github.workspace }}/ExtentReports/Sat_Oct_09_17_03_17_CEST_2021.html
-          
+    
       - uses: actions/checkout@v2
       - name: Set up JDK 8
         uses: actions/setup-java@v2
@@ -23,3 +16,11 @@ jobs:
           distribution: 'adopt'
       - name: Build with Maven
         run: mvn test
+      
+      - name: Publish Test Results
+        uses: actions/upload-artifact@v2
+        with:
+          name: Test Report
+          path: ${{ github.workspace }}/ExtentReports/*.html
+          
+     
