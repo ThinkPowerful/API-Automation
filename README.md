@@ -1,16 +1,21 @@
 
 # HTTPBin(http://httpbin.org/) API's testing with Data driven framework with Rest-Assured and TestNG libraries.
 
-# Steps to run this project directly in the pipeline.
+This project can be executed either directly from the pipeline or can be cloned and executed in local.
 
-Open the pipeline https://github.com/ThinkPowerful/API-Automation/actions/workflows/maven-publish.yml
+# Steps to run this project directly from the pipeline.
 
+1. Navigate to the **Pipeline:** https://github.com/ThinkPowerful/API-Automation/actions/workflows/maven-publish.yml
+2. Find the dropdown **Run Workflow** and select the branch as main and click on the button **Run workflow**.
+3. The build will be triggered and the results will be published under **Artifacts** section.
+4. Download the **Test Report** as Test Report.zip and extract the same. 
+5. Find the latest test report and open it in Chrome browser. 
 
-# Prerequisites to run this Project locally:
+# Steps and Prerequisites to run this Project locally:
 
 Java and Maven
 
-# Commands to run the Project:
+# Commands to run:
 
 # Clone the repository:
 $ git clone https://github.com/ThinkPowerful/API-Automation.git
@@ -40,7 +45,7 @@ This is where the actual test script along with the extent report logs and asser
 _@DataProvider_
 This is where the data is supplied to the above @Test, based on the number of rows defined in the respective test scenario sheet in TestData.xlsx file.
 
-**Note: Every test script java file should extend the properties from BaseTest.java for report initialization.**
+**Note: Every test script java file should extend the properties from BaseTest.java for report initialization etc.**
 
 
 # Base URL: http://httpbin.org
