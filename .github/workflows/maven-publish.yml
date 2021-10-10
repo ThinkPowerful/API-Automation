@@ -1,6 +1,6 @@
 name: Trigger on Commit
 
-on: [push]
+on: [check_run]
 
 jobs:
   build:
