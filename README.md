@@ -11,6 +11,8 @@ This project can be executed either directly from the pipeline or can be cloned 
 4. Download the **Test Report** as Test Report.zip and extract the same. 
 5. Find the latest test report and open it in Chrome browser. 
 
+**Note: Build will always fail, and this is on purpose to showcase the failed test cases in the test report**
+
 # Steps and Prerequisites to run this Project locally:
 
 Java and Maven
