@@ -1,6 +1,6 @@
 name: Trigger on Commit
 
-on: [check_run]
+on: [workflow_dispatch]
 
 jobs:
   build:
