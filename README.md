@@ -1,7 +1,12 @@
 
 # HTTPBin(http://httpbin.org/) API's testing with Data driven framework with Rest-Assured and TestNG libraries.
 
-# Prerequisites to run this Project:
+# Steps to run this project directly in the pipeline.
+
+Open the pipeline https://github.com/ThinkPowerful/API-Automation/actions/workflows/maven-publish.yml
+
+
+# Prerequisites to run this Project locally:
 
 Java and Maven
 
@@ -14,7 +19,7 @@ $ git clone https://github.com/ThinkPowerful/API-Automation.git
 $ cd API-Automation
 
 # Run test scenarios:
-$ mvn exec:java -Dexec.mainClass="com.rest.main.utility.XmlGenerator" test
+$ mvn test
 
 # To write a new test scenario, follow the steps below:
 

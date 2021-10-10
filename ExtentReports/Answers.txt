@@ -1,0 +1,30 @@
+1. What test design techniques would you use to test a feature which grants user access to certain resources depending on their age? For example: if a user is older than XX thenaccess granted.
+
+-- I will go with Equivalence Partitioning test design technique. 
+Example: A user can access a webpage only when he/she is above 18+
+
+My Test conditions would be:
+
+Any user whose age is 18 or greater than 18 then he/she is allowed to access the resource with a http response status code 200.
+Any user whose age is less than 18 then he/she is not allowed to access the resource and a http response status code 403 should be thrown. 
+Any user whose age with negative number say -100 is invalid and will not allow access to the resource and again a status code 403 should be thrown.
+Any user who is trying to access the resource without providing age, he/she should not be allowed to access it and status 401 should be thrown. etc.
+Many such scenarious has to be tested based on the requirement.
+
+2. Given two web services: A and B. Service A is calling service B and expects a response
+with HTTP code 200 (OK).
+Sometimes due to internal problems in service B, it responds with HTTP code 500
+(Internal server error).
+Your task is to test that service A handles this 500 response gracefully (doesn't crash and
+logs the error).
+How would you do it?
+
+-- Whenerver the service B responds with 500 - Internal server error, Service A should catch that in the try/catch block and a standard message should be thrown, along with this, the appropriate error has to be logged in the application logs very clearly for debugging purpose.
+
+3.The development team has a CI pipeline that runs at any time whenever a change is made in Transfer-Service. However, the Account-Guard-Service is only available for
+testing every day from 1:00am to 3:00am. 
+
+-- I would go with Option "C" to test Transfer-Service using a mock of Account-Guard-Service during the normal CI phase and add a scheduled job that runs between 1:00 am to 3:00 am to test against the real Account-Guard-Service.
+
+
+
