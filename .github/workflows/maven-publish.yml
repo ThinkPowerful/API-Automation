@@ -1,4 +1,4 @@
-name: Trigger on Commit
+name: Run API Tests
 
 on: [workflow_dispatch]
 
