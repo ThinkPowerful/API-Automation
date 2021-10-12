@@ -35,7 +35,7 @@ public class DeleteAnythingResponseBodyTest extends BaseTest{
 	}
 
 	@Test(dataProvider = "getData")
-	public void verifyPostAnythingResponseBodyTest(Hashtable<String, String> data)
+	public void verifyDeleteAnythingResponseBodyTest(Hashtable<String, String> data)
 			throws InterruptedException, AWTException, IOException {
 		try {
 			Response response = deleteAnything.deleteAnythingAsQueryParam(data.get("Skip"), data.get("Limit"));
