@@ -39,7 +39,7 @@ public class GetHeadersResponseHeadersTest extends BaseTest{
 	}
 	
 	@Test(dataProvider="getData")
-	public void getHeadersResponseHeadersTest(Hashtable<String, String> data) throws InterruptedException, AWTException, IOException
+	public void verifyGetHeadersResponseHeadersTest(Hashtable<String, String> data) throws InterruptedException, AWTException, IOException
 	{
 		try {
 			ArrayList<String> missingAttributes = new ArrayList<String>();
