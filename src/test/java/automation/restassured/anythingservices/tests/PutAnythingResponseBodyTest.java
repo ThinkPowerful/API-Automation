@@ -37,7 +37,7 @@ public class PutAnythingResponseBodyTest extends BaseTest {
 	}
 
 	@Test(dataProvider = "getData")
-	public void verifyPostAnythingResponseBodyTest(Hashtable<String, String> data)
+	public void verifyPutAnythingResponseBodyTest(Hashtable<String, String> data)
 			throws InterruptedException, AWTException, IOException {
 		try {
 			Response response = putAnything.putAnythingAsRequestFormData(data.get("Country"), data.get("City"));
